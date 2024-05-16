@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=StockGetHistory
+comment0.text=\n\ StockGetHistory\ class\n\n\ This\ class\ is\ used\ by\ AP\ Computer\ Science\ A\ as\ a\ replacement\ to\ the\n\ YahooFinance\ stock\ price\ API\ that\ was\ rendered\ useless\ when\ Yahoo\ shut\ down\n\ their\ service\n\n\ The\ class\ was\ inspired\ by\n\ https\://mkyong.com/java/java-https-client-httpsurlconnection-example/\ which\n\ has\ a\ wonderful\ example\ of\ how\ to\ make\ an\ HTTPS\ call\n\n\ @author\ Roger\ Jaffe\n\ @version\ 1.0\n
+comment1.params=apiKey\ ticker
+comment1.target=StockGetHistory(java.lang.String,\ java.lang.String)
+comment1.text=\n\ Constructor\ for\ the\ StockAPI\ class\n\n\ Get\ an\ AlphaVantage\ API\ key\ from\ https\://www.alphavantage.co/support\n\n\ @param\ apiKey\ An\ AlphaVantage\ API\ key\n\ @param\ ticker\ Stock\ ticker\ symbol\n
+comment2.params=ticker
+comment2.target=javax.net.ssl.HttpsURLConnection\ getConnection(java.lang.String)
+comment2.text=\n\ getConnection\ makes\ a\ connection\ to\ the\ URL\n\n\ @param\ ticker\ The\ ticker\ symbol\ of\ the\ requested\ stock\n\ @return\ A\ string\ of\ CSV\ data\ with\ a\ header\ line\n
+comment3.params=con
+comment3.target=void\ getContent(javax.net.ssl.HttpsURLConnection)
+comment3.text=\n\ getContent\ gets\ the\ content\ from\ the\ HTTPS\ connection\n\n\ @param\ con\ HTTPS\ connection\n
+comment4.params=
+comment4.target=void\ parseLines()
+comment4.text=\n\ Parse\ the\ CSV\ lines\ from\ the\ HTTPS\ call\n
+comment5.params=
+comment5.target=java.lang.String\ getTicker()
+comment5.text=\n\ Get\ stock\ ticker\n\n\ @return\ Stock\ ticker\n
+comment6.params=
+comment6.target=java.util.ArrayList\ getStockPrices()
+comment6.text=\n\ Get\ the\ ArrayList\ of\ stock\ price\ data\n\n\ @return\ Stock\ price\ data\n
+numComments=7

@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=StockPrice
+comment0.text=\n\ The\ StockPrice\ class\ represents\ the\ stock\ prices\ for\ a\ particular\ day\ We\n\ include\ the\ open,\ close,\ high\ and\ low\ prices\ as\ well\ as\ the\ trading\ volume\n\ for\ the\ day\n\n\ @author\ Roger\ Jaffe\n
+comment1.params=date\ open\ high\ low\ close\ volume
+comment1.target=StockPrice(java.lang.String,\ double,\ double,\ double,\ double,\ long)
+comment1.text=\n\n\ @param\ date\ The\ date\ as\ a\ Calendar\ data\ type\n\ @param\ open\ Opening\ price\n\ @param\ high\ High\ price\ for\ the\ day\n\ @param\ low\ Low\ price\ for\ the\ day\n\ @param\ close\ Closing\ price\ for\ the\ day\n\ @param\ volume\ Trading\ volume\ for\ the\ day\n
+comment2.params=
+comment2.target=java.util.Calendar\ getDate()
+comment2.text=\n\ Get\ the\ date\n\n\ @return\ Trading\ date\n
+comment3.params=
+comment3.target=double\ getOpen()
+comment3.text=\n\ Get\ opening\ price\n\n\ @return\ The\ opening\ price\n
+comment4.params=
+comment4.target=double\ getHigh()
+comment4.text=\n\ Get\ highest\ price\n\n\ @return\ The\ highest\ price\n
+comment5.params=
+comment5.target=double\ getLow()
+comment5.text=\n\ Get\ lowest\ price\n\n\ @return\ The\ lowest\ price\n
+comment6.params=
+comment6.target=double\ getClose()
+comment6.text=\n\ Get\ closing\ price\n\n\ @return\ The\ closing\ price\n
+comment7.params=
+comment7.target=double\ getVolume()
+comment7.text=\n\ Get\ trading\ volume\n\n\ @return\ The\ trading\ volume\n
+numComments=8
