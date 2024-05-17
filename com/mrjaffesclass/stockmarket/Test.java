@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Calendar;
 
 public class Test
 {
@@ -21,9 +22,10 @@ public class Test
             
             ArrayList<StockPrice> prices = stock.getStockPrices();
             
-            file.write("Date,Close");
+            file.write("Date,Close\n");
             for(StockPrice price : prices){
-                file.write(price.getDate() + "," + price.getClose() + "\n");
+                Calendar cal = price.getDate();
+                file.write("" + cal.get(Calendar.YEAR) + "-" + (cal.get(Calendar.MONTH)+1) + "-" + cal.get(Calendar.DAY_OF_MONTH) + "," + price.getClose() + "\n");
             }
             
             file.close();
